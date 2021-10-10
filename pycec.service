@@ -1,0 +1,10 @@
+[Service]
+ExecStart=python3 -m pycec
+Restart=always
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=pycec
+User=root
+Group=root
+[Install]
+WantedBy=multi-user.target
